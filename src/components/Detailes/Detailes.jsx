@@ -13,8 +13,8 @@ export default function Detailes() {
     console.log(data);
   }
   useEffect(() => {
-    getItems();
-  }, [])
+    getItems(); // Assuming getItems is defined somewhere
+  }, [getItems]);
   
   return (
     <>
