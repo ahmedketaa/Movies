@@ -1,0 +1,9 @@
+@import '../../index.scss';
+ .brder{
+    border: $borderHight $borderColor solid;
+    margin: 12px 0;
+}
+span{
+    color: rgb(152, 152, 152);
+    justify-content: center;
+}
