@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from './Navbar.module.scss';
 import { Link } from 'react-router-dom';
+import styles from './Navbar.module.scss';
 
 export default function Navbar({userData , Logout }) {
 

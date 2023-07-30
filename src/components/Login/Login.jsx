@@ -1,8 +1,7 @@
 import axios from 'axios';
-import Joi, { allow } from 'joi';
-import React, { useEffect, useState } from 'react'
+import Joi from 'joi';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Navbar from '../Navbar/Navbar';
 
 export default function Login({saveUserData}) {
   let navigate=useNavigate();

@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import styles from './home.module.scss'
-import Moveies from '../Movies/Moveies';
-import Tvshowes from '../Tvshowes/Tvshowes';
-import People from '../People/People';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import HelmetExport, { Helmet } from 'react-helmet';
+import Moveies from '../Movies/Moveies';
+import People from '../People/People';
+import Tvshowes from '../Tvshowes/Tvshowes';
 
 
 
@@ -15,7 +13,6 @@ export default function Home() {
 
        
      let getAllMovies=async()=>{
-      let apiKey = '592d5558fe91383c9979c4a7c357bfee';
       let {data}=await axios.get('https://api.themoviedb.org/3/trending/all/day?api_key=592d5558fe91383c9979c4a7c357bfee');
       setMovies(data.results);
       

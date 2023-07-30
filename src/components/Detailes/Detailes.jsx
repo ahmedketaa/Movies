@@ -1,6 +1,6 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import React, { useEffect, useState } from 'react';
+import { Link, useParams } from 'react-router-dom';
 
 export default function Detailes() {
   const [itemsDetailes, setItemsDetailes] = useState({});
@@ -12,9 +12,13 @@ export default function Detailes() {
     setItemsDetailes(data);
     console.log(data);
   }
+  // useEffect(() => {
+  //   getItems();
+  // }, [])
   useEffect(() => {
     getItems(); // Assuming getItems is defined somewhere
   }, [getItems]);
+  
   
   return (
     <>

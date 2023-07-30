@@ -1,7 +1,7 @@
 import jwtDecode from 'jwt-decode';
 import { useEffect, useState } from 'react';
 import { Offline, Online } from 'react-detect-offline';
-import { Navigate, RouterProvider, createHashRouter } from 'react-router-dom';
+import { Navigate, RouterProvider, createBrowserRouter } from 'react-router-dom';
 import About from '../About/About';
 import Detailes from '../Detailes/Detailes';
 import Home from '../Home/Home';
@@ -39,7 +39,7 @@ function App() {
    
   }, [])
   
-  let routes=createHashRouter([
+  let routes=createBrowserRouter([
     { path:'', element: <Masterlayout userData={userData} Logout={Logout}/>,
     errorElement:<Notfound/>
     ,children:[

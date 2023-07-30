@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbar from '../Navbar/Navbar'
 import { Outlet } from 'react-router-dom'
+import Navbar from '../Navbar/Navbar'
 
 export default function Masterlayout({userData ,Logout}) {
   return (
