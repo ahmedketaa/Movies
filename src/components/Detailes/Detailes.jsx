@@ -17,7 +17,7 @@ export default function Detailes() {
   // }, [])
   useEffect(() => {
     getItems(); // Assuming getItems is defined somewhere
-  }, [getItems]);
+  }, []);
   
   
   return (
